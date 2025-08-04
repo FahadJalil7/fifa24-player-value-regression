@@ -25,7 +25,7 @@ The goal is to analyze which attributes most influence a player’s value, evalu
   - `value_eur` (converted to millions, capped at €100M to remove outliers)
 
 ---
-##Model Results Table
+## Model Results Table
 | Model                                  | R² Score | MSE    | MAE    |
 | -------------------------------------- | -------- | ------ | ------ |
 | Linear Regression (No Poly Features)   | \~0.43   | \~20.6 | \~1.48 |
@@ -44,5 +44,6 @@ Passing, Dribbling, and Composure are moderately correlated with Value and also 
 ## Coefficient Interpretation
 Due to the inclusion of interaction and polynomial terms, individual coefficients in the linear regression models are less directly interpretable.
 This is a common tradeoff in applied regression: increasing model complexity to improve predictive performance often reduces the clarity of individual coefficient values.The focus of this project is on predictive accuracy and model comparison rather than precise coefficient interpretation.
+
 
 

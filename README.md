@@ -1,4 +1,4 @@
-# FIFA Player Value Prediction — Regression Model Comparison
+# FIFA Player Value Prediction Regression Model Comparison
 
 ## Overview 📌
 This project predicts **FIFA male players’ market value** (in millions of euros) using multiple regression techniques.  
@@ -25,3 +25,25 @@ The goal is to analyze which attributes most influence a player’s value, evalu
   - `value_eur` (converted to millions, capped at €100M to remove outliers)
 
 ---
+## Model Results Table
+| Model                                  | R² Score | MSE    | MAE    |
+| -------------------------------------- | -------- | ------ | ------ |
+| Linear Regression (No Poly Features)   | \~0.43   | \~20.6 | \~1.48 |
+| Linear Regression (With Poly Features) | \~0.64   | \~13.1 | \~1.20 |
+| Polynomial Regression (Degree 2)       | \~0.68   | \~11.3 | \~0.85 |
+| Random Forest Regression               | \~0.90   | \~3.4  | \~0.63 |
+---
+
+## Correlation Matrix Insights
+The correlation matrix highlights several key relationships:
+Movement_Reactions shows a strong positive correlation with Value — players with higher reactions tend to have higher market value.
+Age has a moderate negative correlation with Value, but the relationship is non-linear (younger players tend to have more potential value, while older star players remain valuable).
+Passing, Dribbling, and Composure are moderately correlated with Value and also correlated with each other, explaining why some linear regression coefficients appear counterintuitive.
+
+---
+## Coefficient Interpretation
+Due to the inclusion of interaction and polynomial terms, individual coefficients in the linear regression models are less directly interpretable.
+This is a common tradeoff in applied regression: increasing model complexity to improve predictive performance often reduces the clarity of individual coefficient values.The focus of this project is on predictive accuracy and model comparison rather than precise coefficient interpretation.
+
+
+

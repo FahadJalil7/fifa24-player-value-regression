@@ -126,6 +126,8 @@ plt.grid(alpha=0.3)
 
 plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(10))
 plt.gca().yaxis.set_major_locator(ticker.MultipleLocator(10))
+plt.ylim(-5, 60) 
+
 
 plt.legend()
 plt.savefig(os.path.join(CHARTS_PATH, "predicted_vs_actual_all_models.png"))

@@ -1,4 +1,4 @@
-# FIFA Player Value Prediction — Regression Model Comparison
+# FIFA Player Value Prediction Regression Model Comparison
 
 ## Overview 📌
 This project predicts **FIFA male players’ market value** (in millions of euros) using multiple regression techniques.  
@@ -25,3 +25,4 @@ The goal is to analyze which attributes most influence a player’s value, evalu
   - `value_eur` (converted to millions, capped at €100M to remove outliers)
 
 ---
+

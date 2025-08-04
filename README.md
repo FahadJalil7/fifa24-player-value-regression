@@ -26,3 +26,14 @@ The goal is to analyze which attributes most influence a player’s value, evalu
 
 ---
 
+## Correlation Matrix Insights
+The correlation matrix highlights several key relationships:
+Movement_Reactions shows a strong positive correlation with Value — players with higher reactions tend to have higher market value.
+Age has a moderate negative correlation with Value, but the relationship is non-linear (younger players tend to have more potential value, while older star players remain valuable).
+Passing, Dribbling, and Composure are moderately correlated with Value and also correlated with each other, explaining why some linear regression coefficients appear counterintuitive.
+
+---
+## Coefficient Interpretation
+Due to the inclusion of interaction and polynomial terms, individual coefficients in the linear regression models are less directly interpretable.
+This is a common tradeoff in applied regression: increasing model complexity to improve predictive performance often reduces the clarity of individual coefficient values.The focus of this project is on predictive accuracy and model comparison rather than precise coefficient interpretation.
+
